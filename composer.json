@@ -14,5 +14,10 @@
             "email": "brian@brianreich.dev"
         }
     ],
-    "require": {}
+    "bin" : [
+        "no-framework"
+    ],
+    "require": {
+        "symfony/console": "^6.3"
+    }
 }
