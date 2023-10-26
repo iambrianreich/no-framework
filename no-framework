@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+require_once(__DIR__ . '/vendor/autoload.php');
+
+use Symfony\Component\Console\Application;
+
+$application = new Application();
+$application->setName('No-Framework: A tool for frameworkless application generation');
+
+$application->add(new NoFramework\Commands\NewEntityCommand());
+
+$application->run();
+
